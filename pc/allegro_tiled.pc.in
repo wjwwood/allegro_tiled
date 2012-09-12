@@ -1,0 +1,15 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+version=@allegro_VERSION@
+soversion=@allegro_VERSION@
+suffix=
+
+Name: allegro_tiled
+Description: Allegro game programming library, tiled addon
+Version: ${version}
+Libs: -L${libdir} -lallegro_font${suffix}
+Libs.private: 
+Requires: allegro${suffix}-${soversion} >= ${version}
+Cflags: -I${includedir}
