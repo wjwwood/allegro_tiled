@@ -16,7 +16,7 @@
 
 #define FPS 60
 #define DEBUG 0
-#define MAP_FOLDER "data/maps"
+#define MAP_FOLDER "../example/data/maps"
 
 /*
  * Utility debug method
